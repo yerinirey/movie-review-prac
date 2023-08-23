@@ -1,0 +1,40 @@
+:root {
+  --darkgrey: rgb(22, 22, 22);
+  --white: rgb(228, 225, 225);
+}
+
+body {
+  background-color: var(--darkgrey);
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.movie {
+  border: black 1px solid;
+  display: flex;
+}
+
+.movie_img {
+  width: 40%;
+}
+
+.movie_detail {
+  margin-left: 3%;
+}
+
+.movie_detail h1 {
+  margin-bottom: -1px;
+}
+
+.movie_detail span {
+  font-size: smaller;
+}
