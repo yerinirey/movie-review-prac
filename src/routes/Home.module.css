@@ -1,0 +1,36 @@
+:root {
+  --darkblue: #2D3250;
+  --blue: #424769;
+  --lightblue: #7077A1;
+  --orange: #F6B17A;
+}
+body {
+  background-color: var(--darkblue);
+}
+
+.topbar {
+  height:68px;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+  font-weight: 700;
+  background-color: var(--orange);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 14px 3px;
+}
+
+.loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: -40px;
+}
+
+.gridd {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px 0;
+}

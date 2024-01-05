@@ -1,3 +1,71 @@
+:root {
+  --darkblue: #2D3250;
+  --blue: #424769;
+  --lightblue: #7077A1;
+  --orange: #F6B17A;
+}
+
 body {
   color: white;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  background-color: var(--blue); 
+  border: 2px solid var(--lightblue);
+  border-radius: 1.2rem;
+  width: 36%;
+  padding: 18px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.22), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.28);
+}
+
+.poster {
+  border-radius: 1.2rem;
+  height: 260px;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+h2,
+ul,
+p {
+  margin:0;
+}
+.titles {
+  color: var(--orange);
+  font-size: 29px;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+.summary {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0;
+  line-height: 1.9em;
+}
+
+.genre {
+  list-style: none;
+  padding-left: 0;
+  color: var(--lightblue);
+  font-weight: 600;
+
+}
+li {
+  display: inline-block;
+  padding-right: 20px;
 }
